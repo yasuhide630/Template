@@ -12,13 +12,13 @@ import DirectoryCard from "src/components/cards/DirectoryCard";
 
 const getConfig = (api_key: string) => {
   return {
-    endpoint: "https://liveapi.yext.com/v2/accounts/me/entities/geosearch",
+    endpoint: "https://sbx-cdn.yextapis.com/v2/accounts/me/entities/geosearch",
     params: {
       api_key,
       entityTypes: "location",
       limit: "4",
       radius: "50",
-      savedFilterIds: "<REPLACE-ME>",
+      savedFilterIds: "1365515080",
       v: "20220927",
     },
   };
