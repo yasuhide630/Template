@@ -26,18 +26,6 @@ const Header = (props: HeaderProps) => {
           </MaybeLink>
         )}
 
-        {/* <div className="hidden md:flex items-center">
-          <ul className="flex">
-            {links.map((item: CTA) => (
-              <li key={item.label}>
-                <Link
-                  className="Link Link--primary Link--header mx-2 lg:mx-5"
-                  cta={item}
-                />
-              </li>
-            ))}
-          </ul>
-        </div> */}
 
         <button
           className="flex md:hidden absolute p-4 right-0 top-1/2 -translate-y-1/2"
