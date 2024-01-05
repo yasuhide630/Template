@@ -32,16 +32,18 @@ const Footer = (props: FooterProps) => {
   const footerLinks = props.footerLinks || [];
 
   return (
-    <footer className="Footer py-8 sm:py-16">
-      <div className="container">
+    <footer className="bg-gray-200 py-8 sm:py-16">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row items-center justify-between">
           <div className="flex flex-col sm:flex-row items-center">
             {footerLinks.map((link, i) => (
               <Link
-                className="Link Link--primary mb-4 sm:mb-0 sm:mr-4"
+                className="text-blue-700 underline py-1 px-4 m-2 border-r border-gray-300"
                 key={i}
-                cta={link}
-              />
+                href={link.url}
+              >
+                {link.label}
+              </Link>
             ))}
           </div>
 
@@ -49,7 +51,7 @@ const Footer = (props: FooterProps) => {
             {socialLinks.map((socialLink, i) =>
               socialLink.link ? (
                 <Link
-                  className="Link Link--primary"
+                  className="text-blue-700 underline py-1 px-4 m-2"
                   key={i}
                   href={socialLink.link}
                 >
@@ -60,7 +62,7 @@ const Footer = (props: FooterProps) => {
           </div>
         </div>
 
-        <div className="text-sm text-center sm:text-left mt-4">
+        <div className="text-sm text-center sm:text-left mt-4 text-gray-600">
           {copyrightMessage}
         </div>
       </div>
