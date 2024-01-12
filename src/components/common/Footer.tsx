@@ -32,38 +32,38 @@ const Footer = (props: FooterProps) => {
   const footerLinks = props.footerLinks || [];
 
   return (
-    <footer className="bg-gray-200 py-8 sm:py-16">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row items-center justify-between">
-          <div className="flex flex-col sm:flex-row items-center">
-            {footerLinks.map((link, i) => (
-              <Link
-                className="text-blue-700 underline py-1 px-4 m-2 border-r border-gray-300"
-                key={i}
-                href={link.url}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          <div className="my-4 sm:my-0 flex flex-row items-center justify-center sm:justify-end">
-            {socialLinks.map((socialLink, i) =>
-              socialLink.link ? (
-                <Link
-                  className="text-blue-700 underline py-1 px-4 m-2"
-                  key={i}
-                  href={socialLink.link}
-                >
-                  {socialLink.label}
-                </Link>
-              ) : null
-            )}
-          </div>
+<footer>
+      <div className="bg-gray-200">
+        <ul className="flex flex-wrap">
+          <li className="list-none"><a href="https://www.komehyo.co.jp" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">KOMEHYO</a></li>
+          <li className="list-none"><a href="https://komehyo.jp/kaitori/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">買取トップページ</a></li>
+          <li className="list-none"><a href="https://komehyo.jp/kaitori/category/jewelry/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">ブランドジュエリー買取</a></li>
+          <li className="list-none"><a href="https://komehyo.jp/kaitori/category/brand-bag/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">ブランドバッグ買取</a></li>
+          <li className="list-none"><a href="https://komehyo.jp/kaitori/category/watch/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">時計買取</a></li>
+          <li className="list-none"><a href="https://komehyo.jp/kaitori/category/brand-apparel/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">ブランド衣料買取</a></li>
+        </ul>
+      </div>
+      <div className="mb-6">
+        <div className="flex flex-wrap justify-between">
+          <p className="text-blue-800 text-lg tracking-widest leading-7 mb-2">KOMEHYOは古物営業法に基づく<br className="hidden" />古物商の許可を得ております。
+            <span className="text-sm tracking-widest font-normal text-gray-800 block">愛知県公安委員会許可 第541162007700号</span>
+          </p>
+          <ul className="flex flex-wrap">
+            <li className="w-20 ml-5 list-none"><img src="https://komehyo.jp/kaitori/img/footer_logo01.jpg" alt="" className="align-bottom w-full h-auto"/></li>
+            <li className="w-20 ml-5 list-none"><img src="https://komehyo.jp/kaitori/img/footer_logo02.jpg" alt=""  className="align-bottom w-full h-auto"/></li>
+          </ul>
         </div>
+      </div>
 
-        <div className="text-sm text-center sm:text-left mt-4 text-gray-600">
-          {copyrightMessage}
+      <div className="overflow-hidden">
+        <div className="inner">
+          <div className="w-64 mb-8"><img src="https://komehyo.jp/kaitori/img/logo.png" alt="KOMEHYUO" /></div>
+          <ul className="other_nav">
+            <li className="float-left list-none"><a href="https://www.komehyo.co.jp/corporate.html" className="text-sm font-normal block relative">企業情報</a></li>
+            <li className="inline"><a href="https://www.komehyo.co.jp/privacypolicy" className="text-sm font-normal block relative">個人情報保護方針</a></li>
+            <li className="float-left list-none"><a href="https://www.komehyo.co.jp/privacypolicy2" className="text-sm font-normal block relative">個人番号及び特定個人情報の適正な取扱いに関する基本方針</a></li>
+          </ul>
+          <p className="font-normal tracking-widest text-gray-700 float-right">Copyright © Komehyo Co.,Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
