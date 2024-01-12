@@ -34,7 +34,7 @@ const Footer = (props: FooterProps) => {
   return (
 <footer>
       <div className="bg-gray-200">
-        <ul className="flex flex-wrap">
+        <ul className="w-[1170px] mx-auto mb-[35px] flex flex-wrap">
           <li className="list-none"><a href="https://www.komehyo.co.jp" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">KOMEHYO</a></li>
           <li className="list-none"><a href="https://komehyo.jp/kaitori/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">買取トップページ</a></li>
           <li className="list-none"><a href="https://komehyo.jp/kaitori/category/jewelry/" className="text-sm font-normal text-blue-800 block underline relative after:content-['>']">ブランドジュエリー買取</a></li>
