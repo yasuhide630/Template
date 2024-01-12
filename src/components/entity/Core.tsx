@@ -116,7 +116,7 @@ const Core = (props: CoreProps) => {
             </CoreSection>
           )}
         </div>
-        {isDesktopBreakpoint && profile.yextDisplayCoordinate && (
+        {/* {isDesktopBreakpoint && profile.yextDisplayCoordinate && (
           <LazyLoadWrapper>
             <LocationMap
               className="h-[300px] mt-6"
@@ -127,7 +127,7 @@ const Core = (props: CoreProps) => {
               {mappinSVG}
             </LocationMap>
           </LazyLoadWrapper>
-        )}
+        )} */}
       </div>
     </div>
   );
