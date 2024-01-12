@@ -57,7 +57,7 @@ const Footer = (props: FooterProps) => {
 
       <div className="overflow-hidden">
         <div className="inner">
-          <div className="w-64 mb-8"><img src="https://komehyo.jp/kaitori/img/logo.png" alt="KOMEHYUO" /></div>
+          <div className="w-64 mb-8"><a href={logoLink}></div>
           <ul className="other_nav">
             <li className="float-left list-none"><a href="https://www.komehyo.co.jp/corporate.html" className="text-sm font-normal block relative">企業情報</a></li>
             <li className="inline"><a href="https://www.komehyo.co.jp/privacypolicy" className="text-sm font-normal block relative">個人情報保護方針</a></li>
